@@ -236,6 +236,7 @@ ScenePtr hanoi_game_init()
     hanoi_endButton->setOnMouseCallback([&](ObjectPtr object, int x, int y, MouseAction action)->bool {
 
         mainScene->enter();
+        hanoi_BGM->stop();
 
         return true;
     });
